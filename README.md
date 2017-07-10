@@ -1,10 +1,10 @@
-# import-dashboard
+# import-kibana-dashboard
 
 Initialise a dashboard on kibana
 
-## instalation
+## installation
 ```
-npm i import-dashboard
+npm i import-kibana-dashboard
 ```
 
 ## CLI Usage
@@ -16,8 +16,8 @@ $ import-dashboard -h $ES_HOST -p $ES_PORT -c theDashboardConfig.json
 ## Programmatic usage
 
 ```js
-const importStatDashboard = require('import-dashboard')
-importStatDashboard({
+const importKibanaDashboard = require('import-kibana-dashboard')
+importKibanaDashboard({
   host: 'es-host', // default localhost
   port: 'es-port', // default 9200
   config: '/some/config/path.json' // defaults to a path pointing to a config stored in this module
