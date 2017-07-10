@@ -1,5 +1,5 @@
 {
-  "name": "@nearform/import-stat-dashboard",
+  "name": "import-dashboard",
   "version": "0.0.0",
   "description": "Script to create the kibana dashboard needed",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nearform/import-stat-dashboard.git"
+    "url": "git+https://github.com/nearform/import-dashboard.git"
   },
   "keywords": [
     "stats",
@@ -21,9 +21,9 @@
   "author": "Glen Keane",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nearform/import-stat-dashboard/issues"
+    "url": "https://github.com/nearform/import-dashboard/issues"
   },
-  "homepage": "https://github.com/nearform/import-stat-dashboard#readme",
+  "homepage": "https://github.com/nearform/import-dashboard#readme",
   "dependencies": {
     "elasticsearch": "^13.2.0",
     "minimist": "^1.2.0"

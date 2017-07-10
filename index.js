@@ -15,11 +15,12 @@ function parseArgs (argvs) {
     },
     default: {
       host: 'localhost',
-      port: '9200',
-      config: path.join(__dirname, './dashboard.json')
+      port: '9200'
     }
   })
-
+  if (!argv.config) {
+    throw new Error('A path to the config to use is required (-c)')
+  }
   if (!path.isAbsolute(argv.config)) {
     argv.config = path.join(process.cwd(), argv.config)
   }
@@ -28,6 +29,12 @@ function parseArgs (argvs) {
 }
 
 function run (opts) {
+  if (!opts.config) {
+    throw new error('A path to the config to use is required')
+  }
+  opts.host = opts.host || 'localhost'
+  opts.port = opts.port || 9200
+
   const esClient = new ElasticSearch.Client({host: `${opts.host}:${opts.port}` })
   const config = require(opts.config)
 

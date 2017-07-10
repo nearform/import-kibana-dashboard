@@ -1,10 +1,10 @@
-# import-stat-dashboard
+# import-dashboard
 
-Initialise a dashboard on kibana to view useful node.js stats
+Initialise a dashboard on kibana
 
 ## instalation
 ```
-npm i @nearform/import=stat-dashboard
+npm i import-dashboard
 ```
 
 ## CLI Usage
@@ -16,7 +16,7 @@ $ import-dashboard -h $ES_HOST -p $ES_PORT -c theDashboardConfig.json
 ## Programmatic usage
 
 ```js
-const importStatDashboard = require('@nearform/import-stat-dashboard')
+const importStatDashboard = require('import-dashboard')
 importStatDashboard({
   host: 'es-host', // default localhost
   port: 'es-port', // default 9200
