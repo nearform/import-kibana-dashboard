@@ -6,18 +6,20 @@ const minimist = require('minimist')
 const path = require('path')
 const ElasticSearch = require('elasticsearch')
 
+const minimistOpts = {
+  alias: {
+    host: 'c',
+    port: 'p',
+    config: 'c'
+  },
+  default: {
+    host: 'localhost',
+    port: '9200'
+  }
+}
+
 function parseArgs (argvs) {
-  const argv = minimist(argvs, {
-    alias: {
-      host: 'c',
-      port: 'p',
-      config: 'c'
-    },
-    default: {
-      host: 'localhost',
-      port: '9200'
-    }
-  })
+  const argv = minimist(argvs, minimistOpts)
   if (!argv.config) {
     throw new Error('A path to the config to use is required (-c)')
   }
@@ -49,6 +51,7 @@ function run (opts) {
 }
 
 module.exports = run
+module.exports._parseArgs = parseArgs
 
 if (require.main === module) {
   run(parseArgs(process.argv.slice(2)))
