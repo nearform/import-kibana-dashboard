@@ -1,13 +1,13 @@
 {
   "name": "import-kibana-dashboard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Script to create the kibana dashboard needed",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "import-dashboard": "index.js"
+    "import-kibana-dashboard": "index.js"
   },
   "repository": {
     "type": "git",
