@@ -1,10 +1,10 @@
 # import-kibana-dashboard
 
-Initialise a dashboard on kibana
+Initialise a full dashboard on kibana
 
 ## installation
 ```
-npm i import-kibana-dashboard
+npm install -g import-kibana-dashboard
 ```
 
 ## CLI Usage
