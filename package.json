@@ -1,6 +1,6 @@
 {
   "name": "import-kibana-dashboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Script to create the kibana dashboard needed",
   "main": "index.js",
   "scripts": {
