@@ -10,7 +10,7 @@ npm install -g import-kibana-dashboard
 ## CLI Usage
 
 ```
-$ import-dashboard -h $ES_HOST -p $ES_PORT -c theDashboardConfig.json
+$ import-kibana-dashboard -h $ES_HOST -p $ES_PORT -c theDashboardConfig.json
 ```
 
 ## Programmatic usage
